@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Учебный процесс\KP\KP_Practices\Practice_1\bin\Debug\Practice_1.exe.config
+C:\Users\Admin\Desktop\Учебный процесс\KP\KP_Practices\Practice_1\bin\Debug\Practice_1.exe
+C:\Users\Admin\Desktop\Учебный процесс\KP\KP_Practices\Practice_1\bin\Debug\Practice_1.pdb
+C:\Users\Admin\Desktop\Учебный процесс\KP\KP_Practices\Practice_1\obj\Debug\Practice_1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Учебный процесс\KP\KP_Practices\Practice_1\obj\Debug\Practice_1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Учебный процесс\KP\KP_Practices\Practice_1\obj\Debug\Practice_1.exe
+C:\Users\Admin\Desktop\Учебный процесс\KP\KP_Practices\Practice_1\obj\Debug\Practice_1.pdb
