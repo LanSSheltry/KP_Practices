@@ -10,9 +10,23 @@ namespace Practice_1
 {
     class Program
     {
+
+        public delegate void UI(string OutputText);
+
         static void Main(string[] args)
         {
-            WriteLine("Practice no.1\nVolodymyr Aldokhin\nIPZ-41\n\n");
+            string task = FilesIO.GetTaskText(); //Task text
+
+            //Task output
+
+            WriteLine("Practice no.1\tVariant 67\nVolodymyr Aldokhin\nIPZ-41\n\n");
+            WriteLine(task);
+
+            string[] answer = Combinatorics.GetPermutationAnswers(
+                    FilesIO.GetAllLinesFromInput());
+
+            FilesIO.WriteFormattedOutput(answer);
+
             ReadKey();
         }
     }
