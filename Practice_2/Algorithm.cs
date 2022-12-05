@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Practice_2
 {
@@ -11,7 +7,7 @@ namespace Practice_2
 
         List<List<int>> input;
 
-        public (int, int) GetSolution()
+        public (int, int) GetSolution() //Full algorithm
         {
             var filesIO = new IOFiles();
             input = filesIO.GetInputMatrix();
@@ -47,7 +43,7 @@ namespace Practice_2
             return sum == 0 ? true : false;
         }
 
-        private void RabbitTurn(ref int rabbitCarrots)
+        private void RabbitTurn(ref int rabbitCarrots) //One rabbit going to colect carrots
         {
             int startIndex = 0;
             int endIndex = input[0][1] - 1;
@@ -78,7 +74,7 @@ namespace Practice_2
             }
         }
 
-        private void HamsterTurn(ref int hamsterCarrots)
+        private void HamsterTurn(ref int hamsterCarrots) //One hamster going to collect carrots
         {
 
             int startIndex = 0;
