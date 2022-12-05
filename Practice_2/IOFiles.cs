@@ -35,9 +35,13 @@ namespace Practice_2
             return parsedData;
         }
 
-        private void WriteToOutputFile(string text) //Write formatting
+        public void WriteToOutputFile(string text) //Write formatting
         {
+            if (!File.Exists(OutputFileName))
+                File.Create(OutputFileName);
 
+            File.WriteAllText(OutputFileName, text);
+            System.Diagnostics.Process.Start(OutputFileName);
         }
     }
 }

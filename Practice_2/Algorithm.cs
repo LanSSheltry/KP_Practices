@@ -25,7 +25,7 @@ namespace Practice_2
             while (!isMatrixEmpty())
             {
                 RabbitTurn(ref carrotsCollectedByRabbit);
-                HamsterTurn();
+                HamsterTurn(ref carrotsCollectedByHamsters);
             }
 
             return (
@@ -78,10 +78,36 @@ namespace Practice_2
             }
         }
 
-        private void HamsterTurn()
+        private void HamsterTurn(ref int hamsterCarrots)
         {
 
-        }
+            int startIndex = 0;
+            int endIndex = input[0][1] - 1;
+            int maxValueIndex = 0;
 
+            for (int i = 1; i < input.Count; i++)
+            {
+                int maxValue = -1;
+
+                if (i > 1)
+                {
+                    startIndex = (maxValueIndex - 1) < 0 ? 0 : (maxValueIndex - 1);
+                    endIndex = (maxValueIndex + 1) >= input[i].Count ? (input[i].Count - 1) : (maxValueIndex + 1);
+                }
+
+                for (int j = endIndex; j >= startIndex; j--)
+                {
+                    if (maxValue <= input[i][j])
+                    {
+                        maxValue = input[i][j];
+                        maxValueIndex = j;
+                    }
+                }
+
+                hamsterCarrots += input[i][maxValueIndex];
+                input[i][maxValueIndex] = 0;
+
+            }
+        }
     }
 }
