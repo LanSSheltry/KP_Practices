@@ -8,7 +8,7 @@ namespace Practice_2
     {
         static void Main(string[] args)
         {
-            WriteLine("IPZ-41 Vladimir Aldokhin Lab 2");
+            WriteLine("IPZ-41 Aldokhin Volodymyr Practice 2");
             WriteLine("Menu:\n" +
                 "1 - Print input data\n" +
                 "2 - Open input file\n" +
