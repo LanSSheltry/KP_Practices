@@ -76,6 +76,7 @@ namespace Practice_3
             return matricesResult;
         }
 
+
         private static string checkLog(List<List<int>> matrix, int msg)
         {
             int col1 = 0;
